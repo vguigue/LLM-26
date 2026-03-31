@@ -1,0 +1,7 @@
+url: 'https://vguigue.github.io/LLM-26/' # your main domain
+show_downloads: true
+baseurl: ''
+plugins:
+- jekyll-remote-theme 
+remote_theme: pages-themes/cayman
+title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tutoriel sur les modèles de langue"
