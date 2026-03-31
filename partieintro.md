@@ -388,13 +388,13 @@ Pour aller plus loin avec le prompt: [lien](https://docs.anthropic.com/fr/prompt
 
 ### 7.a. Passer d'un texte à un format tabulaire
 
-Soit le texte suivant [lien](https://fr.wikipedia.org/wiki/Agriculture_en_France#Occupation_des_sols_et_du_territoire)
+Soit le texte suivant [lien wikipedia](https://fr.wikipedia.org/wiki/Agriculture_en_France#Occupation_des_sols_et_du_territoire), on va essayer de mettre automatiquement les données dans un tableau.
 
 <div class="ex-box">
 
 Construire un tableau à l'aide du prompt suivant:
 <ul>
-<li>Construire un tableau au format Latex/Excel à partir des données suivantes:</li>
+<li>Construire un tableau au format Latex/Excel/CSV à partir des données suivantes:</li>
 <li>Sélectionner le bloc de texte, le copier, le coller dans le prompt</li>
 <li>Copier-coller le tableau dans Excel</li>
 
@@ -443,6 +443,9 @@ Pour enrichir la lettre dans un second temps
 <li>Quelles sont les qualités recherchées pour ce sujet de thèse?</li>
 <li>Quelles sont les éléments critiques pour juger un profil d'étudiant en informatique?</li>
 </ul>
+
 ➡️ Ajouter les éléments intéressants dans le prompt précédent
+
+➡️ Relire pour éviter les contre-sens... Et aussi pour ne pas que ça ressemble à du chatbot !!
 
 </div>

@@ -18,11 +18,10 @@ Une hallucination est un résultat faux... mais obtenu en maximisant la vraisemb
 
 <div class="ex-box">
 <ul>
-<li> Je voudrais une bibliographie sur la technique CRISPR-CAS9 [remplacer par le terme technique de votre choix]</li>
+<li> Je voudrais une bibliographie sur la technique CRISPR-CAS9 [remplacer par le terme technique de votre choix, idéalement quelque chose d'assez technique]</li>
 </ul>
 
-➡️ par exemple en sélectionnant le modèle  <tt>meta-llama/Llama-3.3-70B-Instruct</tt> dans l'interface Huggingface/ragarenn <BR> 
-Tester les différentes références: si >90% sont bonnes, que faut-il en conclure?
+➡️ Tester les différentes références: si >90% sont bonnes, que faut-il en conclure?
 <BR>
 ➡️ plus les références sont classiques (=beaucoup citées), plus elles sont correctes... Mais il faudra toujours les vérifier !
 <BR>
@@ -53,6 +52,8 @@ Retrouver une source primaire sur [Scholar](https://scholar.google.com) n'est pa
 </div>
 
 ### 1.c Usage en bibliographie : structurer la bibliographie
+
+Evidemment, le principal piège dans une bibliographie, c'est le coté listing... Voyons si le LLM peut nous aider à structurer notre bibliographie.
 
 <div class="ex-box">
 <ul>

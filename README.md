@@ -1,8 +1,10 @@
 
 
-## Ressources du séminaire pratique
+## Ressources du Cours M1 BIPA du premier avril 2026
 
-Support de cours : 
+Support de cours : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/IA-BIPA-26.pdf)
+
+Elargissement de la discussion sur l'IA [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/aftaa-26.pdf)
 
 
 
@@ -53,9 +55,13 @@ Les LLM en mode RAG, pour dialoguer avec des documents:
 
 ## A. Prise en main, identification des forces et faiblesses
 
+Fléchage spécifique des exercices à faire en priorité (=30-45 minutes): A.1; 2.b; 3.b; 3.c; 5.a; 5.b; 7.a; 7.c
+
 [Support introductif](partieintro)
 
 ## B. Exercices orientés recherche: création de contenus
+
+Fléchage spécifique des exercices à faire en priorité (=15 minutes): 1.a; 1.c; B.3
 
 [Quelques questions de recherche](partierecherche)
 
