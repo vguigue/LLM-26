@@ -135,6 +135,8 @@ Il est amusant de constater que la fonction est aussi présente dans Acrobat Rea
 
 ## C.3 Réalisation d'un chapitre bibliographique
 
+
+
 L'enjeu est d'analyser une dizaine ou une vingtaine d'article:
 <ul>
 <li>Que vous mettez de coté au fur et à mesure dans un projet</li>
@@ -145,6 +147,7 @@ L'enjeu est d'analyser une dizaine ou une vingtaine d'article:
 ➡️  Pour que ça marche, il faut une base d'article... Mais dans un domaine que vous maitrisez (pour la première fois).
 Par exemple: [lien](https://pegase.rennes.hub.inrae.fr/recherche/demarrage-de-theses/theses-soutenues/these-microalgues-dans-l-alimentation)
 
+Charger un document dans NotebookLM [lien](https://notebooklm.google.com/) puis commencer les questions...
 
 <div class="ex-box">
 <ul>

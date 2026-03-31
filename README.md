@@ -67,6 +67,8 @@ Fléchage spécifique des exercices à faire en priorité (=15 minutes): 1.a; 1.
 
 ## C. Exercices orientés recherche: analyse de documents et d'articles
 
+Fléchage spécifique des exercices à faire en priorité (=30 minutes): 2.b; C.3; C.4; C.5
+
 [Analyse de documents, lecture d'articles](partiedoc)
 
 ## D. Exercices orientés sur la pédagogie et le métier d'enseignant
