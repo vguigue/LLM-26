@@ -1,6 +1,6 @@
 ## Session C: Analyser des documents
 
-[Retour à la page principale]((./)
+[Retour à la page principale](./)
 
 On a abordé dans la section A des problématiques de reformulation... L'analyse de document partage le fait de chercher des informations dans une source sans en apporter de nouvelles. L'idée est souvent d'appliquer ce paradigme sur des textes plus longs.
 
