@@ -1,5 +1,7 @@
 
-## Session Codage: se lancer avec un LLM
+## Session D : Codage, se lancer avec un LLM
+
+[Retour à la page principale](./)
 
 Les modèles de langue se sont intéressés très tôt aux langages informatiques (cf blog de Karpathy en 2015)[https://karpathy.github.io/2015/05/21/rnn-effectiveness/].
 Il s'agit d'un cas intermédiaire entre le multimodal et la traduction (selon que l'on voit le code comme une langue ou une modalité de données à part entière). Les LLMs excellent aujourd'hui dans ce domaine, au point de bouleverser les métiers du développement... Et l'ensemble des métiers qui ont des besoins en développement informatique : ce qui fait un périmètre très large. 
