@@ -5,7 +5,7 @@
 
 Nous allons voir les usages *recherche*, notamment bibliographique et écriture d'article puis des usages plus pédagogiques sur la rédaction de cours, la création d'exercice.
 
-[Une autre vision des LLM pour la pédagogie, pour plus tard: [lien](https://oer.uclouvain.be/jspui/bitstream/20.500.12279/1089.3/6/CahierLLL_IAG_OKOER.pdf)]
+
 
 
 ## B.1. Bibliographie
@@ -25,22 +25,41 @@ Une hallucination est un résultat faux... mais obtenu en maximisant la vraisemb
 <BR>
 ➡️ plus les références sont classiques (=beaucoup citées), plus elles sont correctes... Mais il faudra toujours les vérifier !
 <BR>
-➡️ Ca vaut le coup de refaire l'expérience sur un domaine plus pointu (moins général) pour avoir plus d'hallucinations... Il faut aussi différentier le mode LLM (mémoire paramétrique) et le mode RAG (sur chatGPT par exemple).
+➡️ Ca vaut le coup de refaire l'expérience sur un domaine plus pointu pour avoir plus d'hallucinations... Il faut aussi différentier le mode LLM (mémoire paramétrique) et le mode RAG (sur chatGPT, consensus ou scopus.ai par exemple).
 </div>
 
+Il est possible de demander des choses plus précises:
+
 <div class="ex-box">
-Générer une bibliographie sur la technique CRISPR-Cas9: distinguer les références qui précèdent cette technique, les références qui fondent CRISPR-Cas9 et les avancées récentes sur ces architectures
+Générer une bibliographie sur la technique CRISPR-Cas9: distinguer les références qui précèdent cette technique, les références qui fondent CRISPR-Cas9 et les avancées récentes sur ces architectures.
 <ul>
 <li>Remplacer le CRISPR-Cas9 par ce que vous voulez</li>
 
 </ul>
 
-➡️ Encore et toujours une histoire de véracité: il faut vérifier que les références existent... Et sont bien pertinentes!
+➡️ Encore et toujours une histoire de véracité: il faut vérifier que les références existent... Et sont bien pertinentes!<BR>
+➡️ Il est étonnant (?) de constater que les résultats peuvent être intéressants.
 </div>
+
+
+Ces approches se fondent (ou se fondaient jusqu'en 2025) sur la mémoire paramétrique. Evidemment, c'est complètement différent avec des outils comme:
+* [https://consensus.app/](https://consensus.app/) accessible rapidement avec un compte gmail
+* [scopus.ai](https://www.elsevier.com/products/scopus/scopus-ai) plus accessible directement
+* [elicit](https://elicit.com/)
+* plugin zotero
+* [scispace](https://scispace.com/)
+
+L'enjeu est de séparer & évaluer deux propriétés distinctes de ces outils:
+1) cherchent-ils les bons articles?
+2) sont-ils capables d'extraire les bonnes informations?
+
+➡️ On a régulièrement la seconde propriété sans la première, ce qui donne des choses étranges.<BR>
+➡️ Ne pas passer trop de temps ici, on va y revenir avec notebookLM dans le chapitre suivant
+
 
 ### 1.b Usage en bibliographie : identifier une source primaire
 
-Retrouver une source primaire sur [Scholar](https://scholar.google.com) n'est pas simple... Sur des techniques très connues (CRISPR-Cas9 en biologie moléculaire, les SVM, VAE ou Transformer en IA, ...)
+Retrouver une source primaire sur [Scholar](https://scholar.google.com) n'est pas simple... Sur des techniques très connues (CRISPR-Cas9 en biologie moléculaire, les SVM, VAE ou Transformer en IA, ...), les articles plus récents sortent d'abord. On peut alors tenter:
 
 
 <div class="ex-box">
@@ -48,7 +67,7 @@ Retrouver une source primaire sur [Scholar](https://scholar.google.com) n'est pa
 <li> Quelle est la référence biblio primaire de CRISPR-Cas9? [remplacer par une technologie très citée dans votre domaine]</li>
 
 </ul>
-
+➡️ Ces articles étant très cités, les résultats sont plus fiables (mais jamais parfait)
 </div>
 
 ### 1.c Usage en bibliographie : structurer la bibliographie
@@ -59,18 +78,16 @@ Evidemment, le principal piège dans une bibliographie, c'est le coté listing..
 <ul>
 <li> Je veux faire une bibliographie sur l'usage des données textuelles dans les systèmes de recommandation: peux-tu me proposer une structuration avec différents usages et quelques références</li>
 <li> Je veux structurer une bibliographie sur l'alimentation animale: peux-tu me proposer une structuration avec différents axes (par exemple, valeurs nutritives, impact sur la performance animale, bien-être, ...) et quelques références </li>
+<li> Concernant les auto-encodeurs, quelles sont les grandes familles d'application d'une part et les principales variables (e.g. VAE) d'autre part. Structurer une ébauche de bibliographie sur ces deux axes. </li>
 </ul>
-
-➡️ plus les références sont classiques (=beaucoup citées), plus elles sont correctes... Mais il faudra toujours les vérifier !
 
 </div>
 
 
 
-## B.2 Rédaction/gestion de projets
+## B.2 Rédaction/gestion de projets de recherche
 
-Quelques exemples:
-
+La fin des textes martyres et autre section incontournables mais peu intéressantes à écrire?
 
 ### 2.a SWOT
 
@@ -100,6 +117,8 @@ Je veux déposer un projet ANR sur le développement de systèmes de recommandat
 <li>Quelles sont les sources de données disponibles pour apprendre ces systèmes de recommandation?</li>
 </ul>
 </div>
+
+Organiser un évènement sans oublier d'étape... Ou chiffrer cette organisation (avec toujours cet enjeu de ne rien rater).
 
 <div class="ex-box">
 
@@ -165,6 +184,7 @@ Trouver un acronyme pour un projet de recherche sur les petits ARN: l'idée est 
 </ul>
 </div>
 
+Ou plus exotique
 <div class="ex-box">
 
 Rédiger un poème sur les petits ARN, la réponse des plantes aux stress environnementaux, les perspectives d'utilisation de l'IA pour le futur. Les rimes seront croisées.

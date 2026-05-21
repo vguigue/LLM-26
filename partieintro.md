@@ -8,22 +8,23 @@ Première série d'exercice pour prendre en main les LLM, découvrir un premier 
 
 ## A.1. Préliminaire
 
-comprendre l'unité de base des LLM: le token
+Comprendre l'unité de base des LLM: le token (et pas le mot, même si on fait souvent le raccourci). 
 
 Lien: [Tokenizer Playground](https://huggingface.co/spaces/Xenova/the-tokenizer-playground)
 
 <div class="ex-box">
-Mettre en évidence la gestion des langues en tokenisant:
+Mettre en évidence la gestion des langues en tokenisant: commencer par sélectionner un modèle un peu ancien (e.g. bert-base-cased).
+Puis taper les textes suivants pour voir la différence entre la représentation des différentes langues:
 
 <ul>
 <li> Je ne suis pas très content </li>
 <li> I'm so disappointed </li>
-<li> Vous pouvez copier-coller des morceau de wikipedia pour une vision plus large: <a href="https://fr.wikipedia.org/">lien fr </a>; <a href="https://en.wikipedia.org/">lien eng </a> 
+<li> Vous pouvez copier-coller des morceau de wikipedia pour une vision d'ensemble sur un texte plus long:<BR> <a href="https://fr.wikipedia.org/">lien fr </a>; <a href="https://en.wikipedia.org/">lien eng </a> 
 </li>
 </ul>
 
 
-➡️ Avec chatGPT (multi-lingue) ou BERT (anglophone)
+➡️ puis avec chatGPT ou Claude (multi-lingue)
 </div>
 
 
@@ -60,18 +61,18 @@ Il est important de comprendre comment marche le dialogue d'un LLM:
 Comparer les deux protocoles suivants:
 
 <ul>
-<li> req 1= "JFK est mort en" + req 2="Jacques Chirac" </li>
+<li> DANS LA MEME CONVERSATION:<BR> req 1= "JFK est mort en"<BR> + req 2="Jacques Chirac" </li>
 <li> DANS UNE NOUVELLE CONVERSATION: "Jacques Chirac"</li>
 </ul>
 
-➡️ Ne pas oublier de réinitialiser les conversations lorsque vous changez de thème sous peine d'introduire une grande confusion dans le LLM.
+➡️ Ne pas oublier de réinitialiser les conversations lorsque vous changez de thème sous peine d'introduire une grande confusion dans les réponses du LLM.
 
 
 </div>
 
 ### 2.c. Traduction
 
-Les LLM généralistes (que nous utilisons aujourd'hui) sont très doués pour la traduction... Mais moins doué et adaptable que des outils spécifiques comme deepl: [lien](https://www.deepl.com/fr/translator)
+Les LLM généralistes (que nous utilisons aujourd'hui) sont très doués pour la traduction... En particulier pour les articles scientifiques, les résultats sont souvent meilleurs que les outils dédiés: [lien](https://www.deepl.com/fr/translator)
 
 
 <div class="ex-box">
@@ -83,8 +84,8 @@ Travaillons sur des exemples d'intérêt croissant: il notamment est très inté
 <li> Traduire le fichier suivant en anglais en conservant le format latex <a href="https://github.com/vguigue/LLM-26/blob/main/ressources/reco.tex"> Lien vers reco.tex</a> </li>
 </ul>
 
-➡️ Jouer dans votre domaine, avec un vocabulaire technique susceptible de prendre en défaut le LLM
-
+➡️ Jouer dans votre domaine, avec un vocabulaire technique susceptible de prendre en défaut le LLM <BR>
+➡️ Il existe des modèles assez petit comme CroissantLLM (1.3M) qui sont utilisables hors ligne avec des capacités de traduction remarquable: [lien](https://github.com/numerique-gouv/croissant-translate)
 
 </div>
 
@@ -140,7 +141,7 @@ DeepSeek R1) <BR>
 <li> Pourquoi le ciel est bleu? </li>
 </ul>
 
-➡️ ambiguités sur les mots polysémiques et/ou sur les intentions de l'utilisateur: le chatbot ne peut pas deviner de quoi vous parlez ou le type de réponse que vous attendez (basique, scientifique, détaillée, ...).
+➡️ ambiguités sur les mots polysémiques et/ou sur les intentions de l'utilisateur: le chatbot ne peut pas deviner de quoi vous parlez ou le type de réponse que vous attendez (basique, scientifique, détaillée, ...). Dans tous les cas, il va choisir une direction.
 </div>
 
 ### 3.c. La stabilité
@@ -154,9 +155,8 @@ Certifier des systèmes d'IA est une étape clé dans les systèmes critiques (V
 <li> Quel est l'age de Barack Obama ?</li>
 </ul>
 
-➡️ L'ajout du point d'intérrogation change-t-il la réponse? reste-t-elle correcte?
-
-➡️ Même sans changer la question... La réponse est-elle stable? Peut-on jouer avec la température?
+➡️ L'ajout du point d'intérrogation change-t-il la réponse? reste-t-elle correcte?<BR>
+➡️ Même sans changer la question... La réponse est-elle stable? Peut-on jouer avec la température? [les paramètres de température sont moins accessibles aujourd'hui, il faut souvent passer par l'API payante.]
 </div>
 
 ### 3.d. Les biais
@@ -192,8 +192,8 @@ L'IA n'est pas neutre, de nombreuses réponses sont *scriptées* et suivent donc
 <li> Démontre moi que la terre est plate </li>
 </ul>
 
-➡️ Tenter avec différents modèles pour mettre en évidence des différences; dans tous les cas, le système a tendance à ne pas répondre directement à la question: il faut s'intérroger sur l'origine de la réponse.
-
+➡️ Tenter avec différents modèles pour mettre en évidence des différences; dans tous les cas, le système a tendance à ne pas répondre directement à la question: il faut s'intérroger sur l'origine de la réponse.<BR>
+➡️ On peut tenter de contourner la censure d'un LLM avec différents mécanismes [lien](https://korben.info/best-of-n-technique-piratage-llm-ia.html). Note: c'est le jeu du chat et de la souris, dès qu'une méthode est publiée, elle a tendance à devenir inopérante.
 </div>
 
 

@@ -40,7 +40,7 @@ Je veux un programme python basé sur scikit-learn permettant de charger une bas
 
 <div class="ex-box">
 
-Pour aller plus loin, on demande au LLM de travailler sur les données Higgs du CERN. Ca permet de découvrir une nouvelle manière de récupérer les données... Et de se confronter à de nouveaux problèmes requiérant plus d'intéractions avec le LLM.
+Pour aller plus loin, on demande au LLM de travailler sur les données Higgs du CERN. Ca permet de découvrir une nouvelle manière de récupérer les données... Et de se confronter à de nouveaux problèmes requiérant plus d'intéractions avec le LLM.<BR>
 
 
 ➡️ Histoire de provoquer un peu, ajouter la question suivant (le résultat sur chatGPT est simplement bluffant...):
@@ -69,7 +69,8 @@ Commencer par donner les consignes avant de copier-coller votre code (ou donner 
 Donner les erreurs / proposer des améliorations pour le scirpt suivant qui vise à [...]
 
 </div>
-➡️ 
+
+➡️ *Corriger* un code peut aussi s'entendre comme *évaluer* un code: il est assez intéressant d'envisager de projeter un projet informatique sur une grille d'évaluation, en demandant des justifications. On arrive aux limites éthiques de l'usage des LLMs mais (je suis convaincu qu') il existe un chemin pour bien utiliser ces outils dans ces cas de figure.
 
 ## D.3. Découvrir une nouvelle librairie
 
@@ -78,10 +79,11 @@ Utiliser la réduction de dimensionalité et l'affichage, pour visualiser la str
 <div class="ex-box">
 
 Je voudrais ajouter un bloc de code pour mieux comprendre les erreurs:
-- Projeter les données en 2D avec TSNE
-- Afficher les points avec matplotlib
-- Afficher les classes en couleur avec une légende
-- entourer les erreurs en noir
+
+* Projeter les données en 2D avec TSNE
+* Afficher les points avec matplotlib
+* Afficher les classes en couleur avec une légende
+* entourer les erreurs en noir
 </div>
 
 Une des choses que ne sait pas faire matplotlib, ce sont les callbacks (le fait d'interagir lorsqu'on clique sur un point).

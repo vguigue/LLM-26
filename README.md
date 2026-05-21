@@ -61,7 +61,8 @@ Les LLM en mode RAG, pour dialoguer avec des documents:
 
 ## A. Prise en main, identification des forces et faiblesses
 
-Fléchage spécifique des exercices à faire en priorité (=30-40 minutes): A.1; 2.b; 3.b; 3.c; 5.a; 5.b; 7.a; 7.c
+Fléchage spécifique des exercices à faire en priorité (=30-40 minutes): A.1; 2.b; 3.b; 3.c; 5.a; 5.b; 7.a; 7.c <BR>
+<p style="color: red;">Ne PAS faire les exercices dont vous connaissez déjà la réponse</p>
 
 [Support introductif](partieintro)
 
@@ -78,6 +79,9 @@ Fléchage spécifique des exercices à faire en priorité (=30-40 minutes): 2.b;
 [Analyse de documents, lecture d'articles](partiedoc)
 
 ## D. Exercice de codage
+
+Fléchage spécifique des exercices à faire en priorité (=30-40 minutes): 1.a
+
 
 [Codage avec des LLM](partieCode)
 
