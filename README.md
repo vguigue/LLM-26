@@ -8,9 +8,9 @@ Séminaire LLMs du CIRM, Marseille, 22 mai 2026
 (Utilisés pour la formation continue IA aux Mines d'Alès, 12 mai 2025)<BR>
 (Utilisés pour la formation continue IA à l'Intitut Agro Montpellier, 13 mai 2025)
 
-Support du séminaire introductif : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/IA-BIPA-26.pdf)<BR>
+Support du séminaire introductif : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/26-CIRM-LLM.pdf)<BR>
 <!-- Elargissement de la discussion sur l'IA [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/aftaa-26.pdf)-->
-Support du séminaire de reflexion : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/IA-BIPA-26.pdf)<BR>
+Support du séminaire de reflexion : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/26-CIRM-LLM-2.pdf)<BR>
 
 
 ## Les LLMs sur les lesquels nous allons travailler
