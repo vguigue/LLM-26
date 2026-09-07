@@ -6,7 +6,7 @@
 Première série d'exercice pour prendre en main les LLM, découvrir un premier panorama des usages et prendre du recul par rapport aux réponses.
 
 
-## A.1. Préliminaire
+## A.1. Préliminaire: les tokens (5 minutes)
 
 Comprendre l'unité de base des LLM: le token (et pas le mot, même si on fait souvent le raccourci). 
 
@@ -27,10 +27,12 @@ Puis taper les textes suivants pour voir la différence entre la représentation
 ➡️ puis avec chatGPT ou Claude (multi-lingue)
 </div>
 
+Note intéressante: au niveau industriel, la facturation d'un modèle se fait par token (ou par millions de tokens)... Au-delà de la performance, certaines langues sont favorisées par rapport à d'autres
+
 
 ## A.2. Premiers tests
 
-### 2.a. Etudier les différences entre modèles
+### 2.a. Etudier les différences entre modèles 
 
 <div class="ex-box">
 Quelques recherches basiques (n'hésitez pas vous écarter des propositions et poser des questions techniques dans votre domaine d'expertise). 
@@ -72,7 +74,7 @@ Comparer les deux protocoles suivants:
 
 ### 2.c. Traduction
 
-Les LLM généralistes (que nous utilisons aujourd'hui) sont très doués pour la traduction... En particulier pour les articles scientifiques, les résultats sont souvent meilleurs que les outils dédiés: [lien](https://www.deepl.com/fr/translator)
+Les LLM généralistes (que nous utilisons aujourd'hui) sont très doués pour la traduction... En particulier pour les articles scientifiques, les résultats sont souvent meilleurs que les outils dédiés [comme deepl](https://www.deepl.com/fr/translator).
 
 
 <div class="ex-box">
@@ -81,7 +83,7 @@ Travaillons sur des exemples d'intérêt croissant: il notamment est très inté
 <ul>
 <li> Traduire en anglais : les LLM maximisent la vraisemblance mais n'ont pas de notion de véracité. </li>
 <li> Traduire en anglais: il pleut des cordes</li>
-<li> Traduire le fichier suivant en anglais en conservant le format latex <a href="https://github.com/vguigue/LLM-26/blob/main/ressources/reco.tex"> Lien vers reco.tex</a> </li>
+<li> Traduire le fichier suivant en anglais en conservant le format latex <a href="https://github.com/vguigue/LLM-26/blob/main/ressources/reco.tex"> Lien vers reco.tex</a>. Si vous ne connaissez pas Latex, vous pouvez maintenant tenter de traduire un fichier Word issu de votre ordinateur. </li>
 </ul>
 
 ➡️ Jouer dans votre domaine, avec un vocabulaire technique susceptible de prendre en défaut le LLM <BR>
@@ -99,8 +101,8 @@ Quelles sont les nouvelles du jour?<BR>
 Peux-tu me faire une courte biographie de Vincent Guigue, professeur d'informatique?
 
 <ul>
-<li>[connecté] <a href="https://chatgpt.com/"> chatGPT</a> ou <a href="https://www.perplexity.ai/"> perplexity </a></li>
-<li>[déconnecté] <a href="https://claude.ai/"> claude</a> ou <a href="https://huggingface.co/chat/"> Huggingface</a> </li>
+<li>[connecté] <a href="https://chatgpt.com/"> chatGPT</a> ou <a href="https://www.perplexity.ai/"> perplexity </a> ou <a href="https://claude.ai/"> claude</a></li>
+<li>[déconnecté]  <a href="https://huggingface.co/chat/"> Huggingface</a> (ce devient difficile de trouver des chatbots déconnectés !)</li>
 </ul>
 
 </div>
@@ -117,7 +119,7 @@ Ces modèles sont utiles (on va essayer de vous convaincre si ce n'est pas encor
 <ul>
 <li> Trouver une liste de 10 animaux en 4 syllabes </li>
 <li> 124578 * 963 (note: le résultat correct est 119,968,614)</li>
-<li> Note: il est absurde de faire des calculs avec des LLM... Ca marche de mieux en mieux (et ce n'est pas vraiment une bonne nouvelle)... Mais on les prendra toujours en défaut (s'ils n'utilisent pas de calculette) avec des divisions, des chiffres plus grands ou avec plus de chiffres après la virugle</li>
+<li> Note: il est absurde de faire des calculs avec des LLM... Ca marche de mieux en mieux (et ce n'est pas vraiment une bonne nouvelle)... Mais on les prendra toujours en défaut (s'ils n'utilisent pas de calculette) avec des divisions, des chiffres plus grands ou avec plus de chiffres après la virgule</li>
 
 </ul>
 
@@ -178,6 +180,8 @@ Ces questions sont multiples et difficiles, on peut se référer à différentes
 
 ## A.4. Alignement, censure ou ligne éditoriale?
 
+### 4.a Neutralité
+
 L'IA n'est pas neutre, de nombreuses réponses sont *scriptées* et suivent donc une ligne éditoriale
 
 <div class="ex-box">
@@ -195,6 +199,19 @@ L'IA n'est pas neutre, de nombreuses réponses sont *scriptées* et suivent donc
 ➡️ Tenter avec différents modèles pour mettre en évidence des différences; dans tous les cas, le système a tendance à ne pas répondre directement à la question: il faut s'intérroger sur l'origine de la réponse.<BR>
 ➡️ On peut tenter de contourner la censure d'un LLM avec différents mécanismes [lien](https://korben.info/best-of-n-technique-piratage-llm-ia.html). Note: c'est le jeu du chat et de la souris, dès qu'une méthode est publiée, elle a tendance à devenir inopérante.
 </div>
+
+### 4.b Sycophantie
+
+La tendance à la flatterie... Est très prononcée sur les LLMs. Voyons où ça nous mène.
+
+<ul>
+<li> Prompt 1: j'étais sur une plage et j'ai laissé les déchets sur place: est ce que c'est grave?</li>
+<li> Prompt 2 (à la suite du dialogue): C'était un petit sac de déchet avec des emballages... Mais il n'y avait aucune poubelle sur place pouvoir les jeter proprement </li>
+</ul>
+
+➡️ Il n'est pas évident que cet exemple en particulier fonctionne... Car il a été listé dans un article et donc probablement corrigé dans les versions modernes des LLM...
+
+Pour plus d'informations, un super article qui mesure ce phénomène: [lien](https://arxiv.org/abs/2505.13995)
 
 
 ## A.5. Prompting
@@ -315,9 +332,10 @@ ou archi-sèches? combien y a-t-il de noms communs? </li>
 </li>
 </ul> 
 
-➡️ vous pouvez demander un simple liste si vous n'êtes pas familié des formats informatiques JSON, XML, ...
+➡️ vous pouvez demander un simple liste ou un fichier XLS (excel) si vous n'êtes pas familié des formats informatiques JSON, XML, ...
 
 </div>
+
 
 ### 6.b. Vers des chaînes de traitements
 
@@ -326,7 +344,6 @@ ou archi-sèches? combien y a-t-il de noms communs? </li>
 
 Soit la phrase:<BR>
 La Commission européenne a déclaré jeudi qu'elle n'était pas d'accord avec les conseils donnés par l'Allemagne aux consommateurs d'éviter l'agneau britannique tant que les scientifiques n'auront pas déterminé si la maladie de la vache folle peut être transmise aux moutons.
-
 
 <ul>
 <li> Extraire les entités avec leur type : lieu, personne, organisation, date </li>
