@@ -1,22 +1,23 @@
 
 
-## Tutoriels sur l'usage des modèles de langue (LLMs)
+## Tutoriels sur l'usage des modèles de langage (LLMs)
 
-Séminaire LLMs du CIRM, Marseille, 22 mai 2026
 
-(Utilisés pour le M1 BIPA, 1er avril 2026)<BR>
-(Utilisés pour la formation continue IA aux Mines d'Alès, 12 mai 2025)<BR>
-(Utilisés pour la formation continue IA à l'Intitut Agro Montpellier, 13 mai 2025)
 
-Support du séminaire introductif : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/26-CIRM-LLM.pdf)<BR>
+Support: 
+1. Intorduction générale sur le machine learning et les modèles de langage [lien](cours/GIPE-1-modeles-langue-26.pdf)
+2. Usages des LLM [lien](cours/GIPE-2-taches-usages-26.pdf)
+3. Reflexions éthiques [lien](cours/GIPE-3-ethique-26.pdf)
+
+<!-- Support du séminaire introductif : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/26-CIRM-LLM.pdf)<BR>
 <!-- Elargissement de la discussion sur l'IA [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/aftaa-26.pdf)-->
-Support du séminaire de reflexion : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/26-CIRM-LLM-2.pdf)<BR>
+<!-- Support du séminaire de reflexion : [lien](https://github.com/vguigue/vguigue.github.io/blob/main/pres/26-CIRM-LLM-2.pdf)<BR> --> 
 
 
 ## Les LLMs sur les lesquels nous allons travailler
 
 <div class="ex-box">
-➡️ Nous allons jouer avec quelques uns des LLM grand public assez connus. Vous pouvez ouvrir plusieurs onglets avec différentes solutions pour comparer les résultats (jouer avec 2 LLMs est intéressant, plus, on risque de s'y perdre).
+➡️ Nous allons jouer avec quelques uns des LLM grand public assez connus. Vous pouvez ouvrir plusieurs onglets avec différentes solutions pour comparer les résultats (jouer avec 2 LLMs est intéressant, mais plus, on risque de s'y perdre).
 </div>
 <BR>
 <BR>
@@ -55,11 +56,11 @@ Les LLM en mode RAG, pour dialoguer avec des documents:
 - **ollama**: pour faire tourner des LLMs en local sur votre ordinateur [lien](https://ollama.com/)
     - Télécharger, lancer, ouvrir une console, lancer un modèle dans la console (attention, le téléchargement du LLM a lien à ce moemnet là).
     - Idéal pour les données sensibles, les chaines de traitements de pdf ou autres
-- **Grok**: pour voir la différence avec des modèles libertariens (est-ce le bon adjectif?) [lien](https://grok.com)
+- **Grok**: pour voir la différence avec des modèles libertariens (est-ce vraiment le bon adjectif?) [lien](https://grok.com)
 
 
 
-## A. Prise en main, identification des forces et faiblesses
+## A. Introduction aux modèles de langage
 
 Fléchage spécifique des exercices à faire en priorité (=30-40 minutes): A.1; 2.b; 3.b; 3.c; 5.a; 5.b; 7.a; 7.c <BR>
 <p style="color: red;">Ne PAS faire les exercices dont vous connaissez déjà la réponse</p>
@@ -81,7 +82,6 @@ Fléchage spécifique des exercices à faire en priorité (=30-40 minutes): 2.b;
 ## D. Exercice de codage
 
 Fléchage spécifique des exercices à faire en priorité (=30-40 minutes): 1.a
-
 
 [Codage avec des LLM](partieCode)
 
